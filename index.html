@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="loading">Loading...</div>
+    <div id="content" style="display: none;">
+        <h1>Risk Matrix</h1>
+        <div id="app"></div>
+        <div id="riskBar">
+            <div id="riskIndicator"></div>
+        </div>
+        <div id="additionalInfo">
+            <p>Date: <span id="currentDate"></span></p>
+            <p>Training Type:
+                <select id="trainingType">
+                    <option value="Initial">Initial</option>
+                    <option value="Refresher">Refresher</option>
+                </select>
+            </p>
+            <p>Location:
+                <select id="location">
+                    <option value="Local">Local</option>
+                    <option value="Airport">Airport</option>
+                </select>
+            </p>
+            <p>Name: <input type="text" id="userName"></p>
+            <p>Email: <input type="email" id="userEmail"></p>
+        </div>
+        <button id="saveButton">Send as PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
