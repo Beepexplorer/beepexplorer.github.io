@@ -1,33 +1,34 @@
-<div class="container">
-  <h1>Risk Matrix Assessment</h1>
-  <div id="app" class="risk-matrix"></div>
-  <div id="additionalInfo" class="form-group">
-    <div class="form-row">
-      <label for="currentDate">Date:</label>
-      <input type="date" id="currentDate" required>
-    </div>
-    <div class="form-row">
-      <label for="trainingType">Training Type:</label>
-      <select id="trainingType">
-        <option value="Initial">Initial</option>
-        <option value="Refresher">Refresher</option>
-      </select>
-    </div>
-    <div class="form-row">
-      <label for="location">Location:</label>
-      <select id="location">
-        <option value="Local">Local</option>
-        <option value="Airport">Airport</option>
-      </select>
-    </div>
-    <div class="form-row">
-      <label for="userName">Name:</label>
-      <input type="text" id="userName" required>
-    </div>
-    <div class="form-row">
-      <label for="userEmail">Email:</label>
-      <input type="email" id="userEmail" required>
-    </div>
-  </div>
-  <button id="sendButton" class="btn-primary">Send Risk Assessment</button>
-</div>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 100px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add more styles as needed */
