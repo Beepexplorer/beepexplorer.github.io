@@ -507,30 +507,23 @@ const riskData = [
     const date = document.getElementById("currentDate").value;
     const trainingType = document.getElementById("trainingType").value;
     const location = document.getElementById("location").value;
-  
+
     if (!userName || !userEmail) {
-      alert("Please fill in your name and email before sending the assessment.");
-      return;
+        alert("Please fill in your name and email before sending the assessment.");
+        return;
     }
-  
-    // Simulate sending an email
-    console.log(`Sending risk assessment to: ${userEmail}`);
-    console.log(`CC: your-email@example.com`);
-    console.log(`Subject: Risk Assessment for ${userName} - ${date}`);
-    console.log(`Body: 
-      Date: ${date}
-      Name: ${userName}
-      Training Type: ${trainingType}
-      Location: ${location}
-      Total Risk Score: ${totalScore}
-      
-      Please find the full assessment attached.`);
-  
-    alert(
-      `Risk assessment sent to ${userEmail} and CC'd to you. (This is a simulation in CodePen)`
-    );
-  }
-  
+
+    // Display assessment information
+    alert(`Risk Assessment Summary:
+    Date: ${date}
+    Name: ${userName}
+    Email: ${userEmail}
+    Training Type: ${trainingType}
+    Location: ${location}
+    Total Risk Score: ${totalScore}
+
+    Note: This is a demo version. In a full implementation, this data would be sent via email.`);
+}
   // Initialize the app when the DOM is fully loaded
   document.addEventListener("DOMContentLoaded", initializeApp);
   
